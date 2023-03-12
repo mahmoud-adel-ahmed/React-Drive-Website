@@ -1,0 +1,87 @@
+.luxury {
+  width: 100%;
+  max-width: 65rem;
+  margin: auto;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.heading h1,
+.text_bg p {
+  text-align: center;
+}
+
+.text_bg {
+  background: rgba(173, 199, 255, 0.502);
+  max-width: 41rem;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2rem;
+}
+
+.text_bg p {
+  margin-top: -0.7rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 4rem;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.card {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(99, 99, 99, 0) 2;
+}
+
+.card img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.content h3 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 48em) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .text_bg p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,89 @@
+.find {
+  width: 100%;
+  max-width: 65rem;
+  margin: auto;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.heading h1,
+.text_bg p {
+  text-align: center;
+}
+
+.text_bg {
+  background-color: rgba(173, 199, 255, 0.502);
+  text-align: center;
+  height: 2rem;
+  max-width: 41rem;
+  margin: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.text_bg p {
+  margin-top: -0.7rem;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.slider_container {
+  padding: 5rem 0;
+}
+
+.card {
+  margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card p {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .text_bg p {
+    font-size: 1rem;
+  }
+}
+
+.swiper-container {
+  width: 480px;
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}

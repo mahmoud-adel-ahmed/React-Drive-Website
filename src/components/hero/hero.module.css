@@ -1,0 +1,133 @@
+.hero {
+  background: url("../../assets/car_unsplash.jpg") center/cover no-repeat;
+  width: 100%;
+  height: 33rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  margin-top: 8%;
+}
+
+.where,
+.from,
+.until,
+.search_icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.from,
+.until {
+  border-left: 1px solid #333;
+  padding-left: 6px;
+}
+
+.search_icon {
+  align-items: center;
+}
+
+.search_icon button {
+  display: none;
+}
+
+.where label,
+.from label,
+.until label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+
+form input {
+  background: transparent;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+form input:focus {
+  outline: none;
+}
+
+.where input {
+  width: 19rem;
+  font-size: 0.9rem;
+}
+
+.border {
+  display: none;
+}
+
+@media screen and (max-width: 45em) {
+  .hero {
+    justify-content: center;
+  }
+
+  form {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .where,
+  .from,
+  .until,
+  .search_icon {
+    width: 100%;
+    border-left: 0;
+    padding-left: 0;
+    padding: 5px 0;
+  }
+
+  .border {
+    display: block;
+    border-bottom: 2px solid #333;
+  }
+
+  .where label,
+  .from label,
+  .until label {
+    padding: 0.5rem 0;
+  }
+
+  .where input {
+    font-size: 0.8rem;
+  }
+
+  .search_icon,
+  .until {
+    border: 0;
+  }
+
+  .search_icon svg {
+    display: none;
+  }
+
+  .search_icon button {
+    display: block;
+    width: 100%;
+    background: #593cfb;
+    color: #fff;
+    border: 0;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 1s;
+  }
+
+  .search_icon button:hover {
+    background: #4733b7;
+  }
+}

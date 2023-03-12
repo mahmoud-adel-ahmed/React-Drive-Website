@@ -1,0 +1,66 @@
+.driver {
+  width: 100%;
+  max-width: 65rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.driver img {
+  width: 32rem;
+}
+
+.driver div {
+  align-self: center;
+}
+
+.driver div > * {
+  margin: 0.7rem 0;
+}
+
+.driver p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.driver span {
+  color: #593cfb;
+}
+
+.driver button {
+  background: #593cfb;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.driver button:hover {
+  background: #4733b7;
+}
+
+.driver .left {
+  justify-self: center;
+}
+
+@media screen and (max-width: 57.5em) {
+  .driver {
+    grid-template-columns: 1fr;
+  }
+
+  .driver img {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .driver img {
+    width: 25rem;
+  }
+}
